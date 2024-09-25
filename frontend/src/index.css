@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@property --data-card-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #edf2f4;
+}
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+a {
+  text-decoration: none;
+}

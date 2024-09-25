@@ -1,0 +1,36 @@
+.loading {
+    width: 100%;
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.loading p {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: rgb(0, 64, 90);
+
+    /* animations */
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+/*********** animations ***********/
+@keyframes spin {
+    0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    33% {
+        transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    }
+    67% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "blogs": [
+    {
+      "id": "1724934907935",
+      "title": "Learning React Basics",
+      "description": "An introduction to the basics of React, including components, props, and state",
+      "createdDate": "2024-08-29T12:35:07.935Z",
+      "updatedDate": "2024-08-29T16:21:42.717Z"
+    },
+    {
+      "id": "1724934931346",
+      "title": "Getting Started with Python 58",
+      "description": "A beginner's guide to Python programming, covering syntax, variables, and basic operations.",
+      "createdDate": "2024-08-29T12:35:31.346Z",
+      "updatedDate": "2024-08-29T16:02:50.267Z"
+    },
+    {
+      "id": "1724934960684",
+      "title": "Introduction to JavaScript",
+      "description": "Learn the fundamentals of JavaScript, including variables, loops, and functions.",
+      "createdDate": "2024-08-29T12:36:00.684Z",
+      "updatedDate": "2024-08-29T16:02:04.499Z"
+    },
+    {
+      "id": "1724934983340",
+      "title": "Understanding Django Framework",
+      "description": "Explore the Django framework for building robust web applications with Python.",
+      "createdDate": "2024-08-29T12:36:23.340Z",
+      "updatedDate": "2024-08-29T12:36:23.340Z"
+    },
+    {
+      "id": "1724935017965",
+      "title": "Advanced CSS Techniques",
+      "description": "Dive into advanced CSS techniques for creating responsive and modern web designs.",
+      "createdDate": "2024-08-29T12:36:57.965Z",
+      "updatedDate": "2024-08-29T12:36:57.965Z"
+    }
+  ]
+}

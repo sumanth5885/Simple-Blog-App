@@ -1,0 +1,33 @@
+.sign-up {
+    width: 50%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    box-shadow: 3px 3px 5px black;
+}
+.sign-up form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sign-up form input {
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    color: white;
+}
+.sign-up form button {
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 800;
+    background-color: orangered;
+    border: none;
+    color: white;
+}

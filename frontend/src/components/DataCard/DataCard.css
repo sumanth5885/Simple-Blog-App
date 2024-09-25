@@ -1,0 +1,97 @@
+.data-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 200px; */
+    min-height: 300px;
+    min-width: 280px;
+    padding: 15px;
+    background-color: var(--data-card-color);
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px black;
+}
+.data-card .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    animation: image-animation 1s linear 1 forwards;
+}
+.data-card .image-container img {
+    width: 6.25rem;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 4px;
+}
+.data-card .image-container img:hover {
+    transform: scale(0.7);
+    transition: 0.3s;
+}
+.data-card .card-title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: -20px;
+}
+.data-card .card-desc {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.496);
+    font-size: 0.85rem;
+    /* Truncate to 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.data-card .card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.data-card .button-container {
+    display: flex;
+    gap: 5px;
+}
+.data-card .button-container button {
+    padding: 5px 13px;
+    font-size: 0.65rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+}
+.data-card .button-container button::before {
+    content: attr(data-purpose);
+    position: absolute;
+    font-size: 1rem;
+    background-color: var(--purpose-color);
+    padding: 5px 8px;
+    border-radius: 5px;
+    transform: translateY(0) rotate(30deg);
+    opacity: 0;
+}
+.data-card .button-container button:hover::before {
+    transition: 0.3s;
+    transform: translateY(-40px) rotate(0);
+    opacity: 1;
+}
+.data-card .button-container button:nth-child(1) {
+    background-color: #343a40;
+    color: white;
+}
+.data-card .button-container button:nth-child(2) {
+    background-color: #eb5e28;
+    color: white;
+}
+
+@keyframes image-animation {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
